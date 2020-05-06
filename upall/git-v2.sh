@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# github.com/felipendc
+
 # Go back to the root (main) folder
 cd ../
 
