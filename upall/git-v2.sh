@@ -16,7 +16,7 @@ git add --all .
 output=$(date)
 
 # This will print the date and the hour that this project was uploaded to github
-git commit -m "$output"
+git commit -m "Vicyos Update: $output"
 
 # Push the local files to github
 
