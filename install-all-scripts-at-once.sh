@@ -29,7 +29,7 @@ sudo snap install \
     handbrake-jz odio youtube-dl inkscape meteo
 
 # Initiate git-lfs for larger packages:
- git lfs install
+# git lfs install
 
 
 
