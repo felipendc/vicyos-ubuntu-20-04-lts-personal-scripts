@@ -13,7 +13,7 @@ sudo apt install \
 # Install any pkgs dependencies
 sudo apt install -f
 
-# Auto remove unnecessary pkgs
+# Auto remove unnecessary packages:
 sudo apt autoremove
 
 # Install Firewall and allow Samba: 
