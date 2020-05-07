@@ -49,19 +49,19 @@ sudo snap install \
 cd android-build-environment-setup && ./android_build_env.sh && cd ../
 
 # Install nitroshare in case samba isn't working:
-cd nitroshare && sudo apt install ./nitroshare_0.3.3-1.1_amd64.deb && cd ../
+cd nitroshare && sudo apt install ./nitroshare_0.3.3-1.1_amd64.deb -y --allow-downgrades && cd ../
 
 # Move my personal .bashrc file to my HOME folder:
 cd ubuntu-personal-bashrc && sudo cp -r .bashrc* $HOME/ && cd ../
 
 # Install 4kvideodownloader:
-cd random && sudo apt install ./4kvideodownloader*.deb && cd ../
+cd random && sudo apt install ./4kvideodownloader*.deb -y --allow-downgrades && cd ../
 
 # Install Google-Chrome Browser:
-cd random && sudo apt install ./google-chrome-stable_current_amd64.deb && cd ../
+cd random && sudo apt install ./google-chrome-stable_current_amd64.deb -y --allow-downgrades && cd ../
 
 # Install Visual Studio Code:
-cd random && sudo apt install ./code*.deb && cd ../
+cd random && sudo apt install ./code*.deb -y --allow-downgrades && cd ../
 
 # Install Photoscape with wine:
 cd random && wine photoscape*.exe && cd ../
