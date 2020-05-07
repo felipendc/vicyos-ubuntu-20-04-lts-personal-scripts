@@ -1,6 +1,8 @@
 #!/bin/bash
-
 # github.com/felipendc
+
+#Variable to Setup the current user name for Samba  
+current_user_name="vicyos"
 
 
 # Vicyos  Personal packages:
@@ -19,7 +21,7 @@ sudo ufw enable
 sudo ufw allow Samba
 
 # Setup Samba
-sudo smbpasswd -a vicyos
+sudo smbpasswd -a $current_user_name
 
 # Vicyos Personal snaps:
 sudo snap install \
