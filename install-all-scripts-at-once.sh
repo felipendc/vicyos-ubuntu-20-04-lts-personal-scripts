@@ -8,8 +8,8 @@ current_user_name="vicyos"
 # Vicyos  Personal packages:
 sudo apt install \
     python3-pip git-lfs vlc clementine wine qbittorrent synaptic gufw \
-    samba smbclient samba-common-bin smbclient libsmbclient -y
-
+    samba smbclient samba-common-bin smbclient libsmbclient inkscape -y
+        
 # Install any pkgs dependencies
 sudo apt install -f
 
@@ -25,8 +25,14 @@ sudo smbpasswd -a $current_user_name
 
 # Vicyos Personal snaps:
 sudo snap install \
-    visualg discord-bartixxx telegram-desktop glimpse-editor \
-    handbrake-jz odio youtube-dl inkscape meteo
+    visualg \
+    discord-bartixxx \
+    telegram-desktop \
+    glimpse-editor \
+    handbrake-jz \
+    odio \
+    youtube-dl \
+    meteo
 
 # Initiate git-lfs for larger packages:
 # git lfs install
@@ -72,4 +78,4 @@ cd scdl && sudo pip3 install scdl && cd ../
 
 
 # LOOK FOR UPDATE FOR ALL THE PACKAGES:
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
