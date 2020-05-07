@@ -16,7 +16,7 @@ sudo apt install -f
 # Auto remove unnecessary pkgs
 sudo apt autoremove
 
-# Install Firewall and Setup: 
+# Install Firewall and allow Samba: 
 sudo ufw enable
 sudo ufw allow Samba
 
