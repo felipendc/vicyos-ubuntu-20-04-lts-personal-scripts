@@ -46,7 +46,7 @@ cd android-build-environment-setup && ./android_build_env.sh && cd ../
 cd nitroshare && sudo apt install ./nitroshare_0.3.3-1.1_amd64.deb && cd ../
 
 # Move my personal .bashrc file to my HOME folder:
-cd ubuntu-personal-bashrc && cp -r .bashrc $HOME/ && cd ../
+cd ubuntu-personal-bashrc && sudo cp -r .bashrc* $HOME/ && cd ../
 
 # Install 4kvideodownloader:
 cd random && sudo apt install ./4kvideodownloader*.deb && cd ../
