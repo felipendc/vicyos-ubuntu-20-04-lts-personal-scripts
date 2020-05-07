@@ -1,7 +1,7 @@
 #!/bin/bash
 # github.com/felipendc
 
-#Variable to Setup the current user name for Samba  
+# Variable to Setup the current user name for Samba  
 current_user_name="vicyos"
 
 
