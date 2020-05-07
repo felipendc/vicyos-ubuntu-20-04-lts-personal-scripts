@@ -7,7 +7,7 @@ current_user_name="vicyos"
 
 # Vicyos  Personal packages:
 sudo apt install \
-    git-lfs vlc clementine wine qbittorrent synaptic gufw \
+    python3-pip git-lfs vlc clementine wine qbittorrent synaptic gufw \
     samba smbclient samba-common-bin smbclient libsmbclient -y
 
 # Install any pkgs dependencies
@@ -63,7 +63,8 @@ cd random && wine photoscape*.exe && cd ../
 # Install XDownloader Manager: 
 cd random && tar -xf xdm*.tar.xz  && sudo ./install.sh && rm -r install.sh readme.txt && cd ../
 
-
+# Install SoundCloud Downloader:
+cd scdl && sudo pip3 install scdl && cd ../
 
 
 
