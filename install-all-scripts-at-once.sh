@@ -9,13 +9,13 @@ current_user_name="vicyos"
 sudo apt install \
     python3-pip git-lfs vlc clementine wine qbittorrent synaptic gufw \
     samba smbclient samba-common-bin smbclient libsmbclient inkscape \
-    winff brasero deepin-movie filezilla -y
+    winff brasero deepin-movie filezilla handbrake -y
         
 # Install any pkgs dependencies
 sudo apt install -f
 
 # Auto remove unnecessary packages:
-sudo apt autoremove
+#sudo apt autoremove
 
 # Install Firewall and allow Samba: 
 sudo ufw enable
@@ -30,7 +30,6 @@ sudo snap install \
     discord-bartixxx \
     telegram-desktop \
     glimpse-editor \
-    handbrake-jz \
     odio \
     youtube-dl \
     meteo \
