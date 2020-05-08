@@ -9,7 +9,7 @@ current_user_name="vicyos"
 sudo apt install \
     python3-pip git-lfs vlc clementine wine qbittorrent synaptic gufw \
     samba smbclient samba-common-bin smbclient libsmbclient inkscape \
-    winff brasero deepin-movie -y
+    winff brasero deepin-movie filezilla -y
         
 # Install any pkgs dependencies
 sudo apt install -f
