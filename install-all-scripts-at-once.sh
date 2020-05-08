@@ -8,7 +8,8 @@ current_user_name="vicyos"
 # Vicyos  Personal packages:
 sudo apt install \
     python3-pip git-lfs vlc clementine wine qbittorrent synaptic gufw \
-    samba smbclient samba-common-bin smbclient libsmbclient inkscape -y
+    samba smbclient samba-common-bin smbclient libsmbclient inkscape \
+    winff brasero deepin-movie -y
         
 # Install any pkgs dependencies
 sudo apt install -f
@@ -32,7 +33,8 @@ sudo snap install \
     handbrake-jz \
     odio \
     youtube-dl \
-    meteo
+    meteo \
+    onlyoffice-desktopeditors
 
 # Initiate git-lfs for larger packages:
 # git lfs install
