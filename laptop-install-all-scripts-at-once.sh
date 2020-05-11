@@ -46,14 +46,21 @@ sudo snap install \
 ### Run scripts and install packages ####
 #########################################
 
+######### Set my favorite picture as background wallpaper:
+cd vicyos-background-wallpaper
+sudo cp -r *.jpg /usr/share/backgrounds
+gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/fedora-workstation/593985.jpg"
+cd ../
+
+
 # Setup Android Build Environment:
-cd android-build-environment-setup && ./android_build_env.sh && cd ../
+#cd android-build-environment-setup && sudo chmod +x *.sh && ./android_build_env.sh && cd ../
 
 # Install nitroshare in case samba isn't working:
 cd nitroshare && sudo apt install ./nitroshare_0.3.3-1.1_amd64.deb -y --allow-downgrades && cd ../
 
 # Move my personal .bashrc file to my HOME folder:
-cd ubuntu-personal-bashrc && sudo cp -r .bashrc* $HOME/ && cd ../
+cd ubuntu-personal-bashrc && sudo cp -r .bashrc* ~/ && cd ../
 
 # Install 4kvideodownloader:
 cd random && sudo apt install ./4kvideodownloader*.deb -y --allow-downgrades && cd ../
@@ -68,12 +75,17 @@ cd random && sudo apt install ./code*.deb -y --allow-downgrades && cd ../
 cd random && wine photoscape*.exe && cd ../
 
 # Install XDownloader Manager: 
-cd random && tar -xf xdm*.tar.xz  && sudo ./install.sh && rm -r install.sh readme.txt && cd ../
+cd random && sudo chmod +x *.sh && tar -xf xdm*.tar.xz  && sudo ./install.sh && rm -r install.sh readme.txt && cd ../
 
 # Install SoundCloud Downloader:
 cd scdl && sudo pip3 install scdl && cd ../
 
+# Set Github email and nickname:
+sudo chmod +x upall/*.sh && sudo sh ./upall/setup-git-v1.sh
 
+
+# Install Intel Screen Tearing fix, just in case you are using: Intel® HD Graphics
+#cd vicyos-ubuntu-screen-tearing-for-intel-fix && sudo sh ./vicyos-install-linux-screen-tearing-#fix.sh && cd ../
 
 
 
