@@ -1,6 +1,13 @@
 #!/bin/bash
 # github.com/felipendc
 
+######### Set my favorite picture as background wallpaper:
+cd vicyos-background-wallpaper
+sudo cp -r *.jpg /usr/share/backgrounds
+gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/593985.jpg"
+cd ../
+
+
 # Variable to Setup the current user name for Samba  
 current_user_name="vicyos"
 
@@ -46,13 +53,6 @@ sudo snap install \
 ### Run scripts and install packages ####
 #########################################
 
-######### Set my favorite picture as background wallpaper:
-cd vicyos-background-wallpaper
-sudo cp -r *.jpg /usr/share/backgrounds
-gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/fedora-workstation/593985.jpg"
-cd ../
-
-
 # Setup Android Build Environment:
 cd android-build-environment-setup && sudo chmod +x *.sh && ./android_build_env.sh && cd ../
 
@@ -72,10 +72,10 @@ cd random && sudo apt install ./google-chrome-stable_current_amd64.deb -y --allo
 cd random && sudo apt install ./code*.deb -y --allow-downgrades && cd ../
 
 # Install Photoscape with wine:
-cd random && wine photoscape*.exe && cd ../
+wine random/photoscape*.exe 
 
 # Install XDownloader Manager: 
-cd random && sudo chmod +x *.sh && tar -xf xdm*.tar.xz  && sudo ./install.sh && rm -r install.sh readme.txt && cd ../
+cd random && tar -xf xdm*.tar.xz && sudo ./install.sh && rm -r install.sh readme.txt && cd ../
 
 # Install SoundCloud Downloader:
 cd scdl && sudo pip3 install scdl && cd ../
