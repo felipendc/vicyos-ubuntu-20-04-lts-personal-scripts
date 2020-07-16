@@ -58,7 +58,6 @@ sudo apt install gparted -y
 sudo apt install hardinfo -y
 sudo apt install wireless-tools -y
 sudo apt install net-tools -y
-
 sudo apt install wine-stable -y
 sudo apt install gufw -y
 
