@@ -12,15 +12,60 @@ sudo apt-get update
 sudo apt install -y nvidia-driver-390 nvidia-settings
 
 
-# Variable to Setup the current user name for Samba  
-current_user_name="vicyos"
+###############
+sudo apt install flatpak -y
+sudo flatpak install -y FLATPAK/com.discordapp.Discord.flatpakref
+sudo flatpak install -y FLATPAK/net.codeindustry.MasterPDFEditor.flatpakref
+sudo flatpak install -y FLATPAK/org.clementine_player.Clementine.flatpakref
+sudo flatpak install -y FLATPAK/org.gimp.GIMP.flatpakref
+sudo flatpak install -y FLATPAK/org.kde.kdenlive.flatpakref
+sudo flatpak install -y FLATPAK/org.kde.krita.flatpakref
+sudo flatpak install -y FLATPAK/org.qbittorrent.qBittorrent.flatpakref
+sudo flatpak install -y FLATPAK/org.telegram.desktop.flatpakref
+sudo flatpak install -y FLATPAK/org.videolan.VLC.flatpakref
+sudo flatpak install -y FLATPAK/fr.handbrake.ghb.flatpakref
+sudo flatpak install -y FLATPAK/org.filezillaproject.Filezilla.flatpakref
+sudo flatpak install -y FLATPAK/org.inkscape.Inkscape.flatpakref
+sudo flatpak install -y FLATPAK/com.visualstudio.code.flatpakref
+sudo flatpak install -y FLATPAK/com.gitlab.bitseater.meteo.flatpakref
+sudo flatpak install -y FLATPAK/org.onlyoffice.desktopeditors.flatpakref
+sudo flatpak install -y FLATPAK/com.hamrick.VueScan.flatpakref
 
+###############
 
 # Vicyos  Personal packages:
-sudo apt install \
-    python3-pip git-lfs vlc clementine wine qbittorrent synaptic gufw \
-    samba smbclient samba-common-bin smbclient libsmbclient inkscape \
-    winff brasero deepin-movie filezilla handbrake -y
+
+sudo apt install python3-pip -y
+sudo apt install git-lfs -y
+sudo apt install synaptic -y
+sudo apt install samba -y
+sudo apt install smbclient -y
+sudo apt install samba-common-bin -y
+sudo apt install smbclient -y
+sudo apt install libsmbclient -y
+sudo apt install winff -y
+sudo apt install brasero -y
+sudo apt install gnome-tweaks -y
+sudo apt install simplescreenrecorder -y
+sudo apt install pyhton -y
+sudo apt install python-pip -y
+sudo apt install youtube-dl -y
+sudo apt install dconf-editor -y
+sudo apt install thunar -y
+sudo apt install com.github.stsdc.monitor -y
+sudo apt install gnome-system-monitor -y
+sudo apt install ocl-icd-opencl-dev -y
+sudo apt install com.github.donadigo.eddy -y
+sudo apt install xsensors -y
+sudo apt install gnome-disk-utility -y
+sudo apt install gparted -y
+sudo apt install hardinfo -y
+sudo apt install wireless-tools -y
+sudo apt install net-tools -y
+sudo apt install wine-stable -y
+sudo apt install gufw -y
+
+
         
 # Install any pkgs dependencies
 sudo apt install -f
@@ -32,19 +77,9 @@ sudo apt install -f
 sudo ufw enable
 sudo ufw allow Samba
 
-# Setup Samba
-sudo smbpasswd -a $current_user_name
-
 # Vicyos Personal snaps:
-sudo snap install \
-    visualg \
-    discord-bartixxx \
-    telegram-desktop \
-    glimpse-editor \
-    odio \
-    youtube-dl \
-    meteo \
-    onlyoffice-desktopeditors
+sudo snap install odio
+
 
 # Initiate git-lfs for larger packages:
 # git lfs install
@@ -95,4 +130,8 @@ sudo chmod +x upall/*.sh && sudo sh ./upall/setup-git-v1.sh
 
 
 # LOOK FOR UPDATE FOR ALL THE PACKAGES:
-sudo apt update && sudo apt upgrade -y
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -f
+sudo apt autoremove
+
