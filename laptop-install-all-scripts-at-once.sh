@@ -7,6 +7,9 @@ sudo cp -r *.jpg /usr/share/backgrounds
 gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/593985.jpg"
 cd ../
 
+cd ubuntu-kernel-update
+sudo dpkg -i *.deb
+cd ../
 
 ###############
 

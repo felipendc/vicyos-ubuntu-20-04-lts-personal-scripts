@@ -7,9 +7,13 @@ sudo cp -r *.jpg /usr/share/backgrounds
 gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/593985.jpg"
 cd ../
 
+cd ubuntu-kernel-update
+sudo dpkg -i *.deb
+cd ../
+
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update
-sudo apt install -y nvidia-driver-390 nvidia-settings
+sudo apt install -y nvidia-driver-450 nvidia-settings
 
 
 ###############
