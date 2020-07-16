@@ -14,7 +14,7 @@ cd ../
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update
 sudo apt install -y nvidia-driver-450 nvidia-settings
-
+#sudo apt install -y nvidia-driver-390 nvidia-settings
 
 ###############
 sudo apt install flatpak -y
