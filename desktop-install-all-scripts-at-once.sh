@@ -7,6 +7,10 @@ sudo cp -r *.jpg /usr/share/backgrounds
 gsettings set org.gnome.desktop.background picture-uri "/usr/share/backgrounds/593985.jpg"
 cd ../
 
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+sudo apt install -y nvidia-driver-390 nvidia-settings
+
 
 # Variable to Setup the current user name for Samba  
 current_user_name="vicyos"
